@@ -19,7 +19,7 @@ function UpdateCAStatus() {
       $.response.contentType = 'application/json';
       $.response.setBody(body);
       $.response.status = $.net.http.OK;
- gdfgfdgfdgdgfdgdfgfgdfgdf555555555555555555555555555555555gdrftgdrfhfhghfgfgjgj
+ gdfgfdgfdgdgfdgdfgfgdfgdf
 }
  
 // Function for validation of input. Returns true/false for valid/invalid inputs
