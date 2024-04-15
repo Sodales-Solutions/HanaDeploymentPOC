@@ -1,15 +1,8 @@
-/******************************************Project-WOODBRIDGE***********************************************************/
-/* Developer Name 				:  	 Raj Powar																		           */
-/* Date      					:    28-03-2023																			           */
-/* Application Name				: 	 Corrective Action Dashboard							    				                                   */
-/* Functionality 				:  	 Service to update CA Status		    	    								                               */
-/* Service Name 				: 	 INC_CAStatusUpdate.xsjs														                           */
-/***********************************************************************************************************************/
- 
+
 var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
 function UpdateCAStatus() {
-    soham xyz
+    // soham xyz;
        conn = $.db.getConnection(); // Open Database Connection.
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
        
