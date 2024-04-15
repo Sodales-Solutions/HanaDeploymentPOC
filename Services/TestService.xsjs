@@ -6,7 +6,7 @@
 /* Service Name 				: 	 INC_CAStatusUpdate.xsjs														                           */
 /***********************************************************************************************************************/
  
-var conn, query, cstmt; // variables for database connection and query statement
+var conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
 function UpdateCAStatus() {
        conn = $.db.getConnection(); // Open Database Connection.
