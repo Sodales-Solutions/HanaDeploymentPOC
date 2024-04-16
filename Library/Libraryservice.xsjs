@@ -4,7 +4,7 @@ var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query
 function UpdateCAStatus() {
        conn = $.db.getConnection(); // Open Database Connection.
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
-       
+       RSDGDSGDFGDFGD
     //   conn.commit();
 var teststring = 'test DB deployment through Git Hub'; 
 fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
