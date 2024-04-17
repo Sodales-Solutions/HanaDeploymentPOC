@@ -6,6 +6,8 @@ function UpdateCAStatus() {
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
        RSDGDSGDFGDFGD
        123456
+       etertr
+       11111111
     //   conn.commit();
 var teststring = 'test DB deployment through Git Hub'; 
 fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
