@@ -4,13 +4,18 @@ var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query
 function UpdateCAStatus() {
        conn = $.db.getConnection(); // Open Database Connection.
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
-       
+       RSDGDSGDFGDFGD
+       123456
+       etertr
+       11111111
     //   conn.commit();
 var teststring = 'test DB deployment through Git Hub'; 
 fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 tttttttttttttttt
 dfghjkl
  
+ 
+ fcvgbhnjmk,
        conn.close();	// close connection
       var body = JSON.stringify("success");
       $.response.contentType = 'application/json';
