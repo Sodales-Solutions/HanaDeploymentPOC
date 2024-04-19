@@ -6,20 +6,21 @@
 /* Service Name 				: 	 INC_CAStatusUpdate.xsjs														                           */
 /***********************************************************************************************************************/
  
-var conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
+var conn, query, cstmt; // variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
 function UpdateCAStatus() {
        conn = $.db.getConnection(); // Open Database Connection.
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
        
-       conn.commit();
- 
+    //   conn.commit();
+var teststring = 'test DB deployment through Git Hub for test Library Services'; 
+
        conn.close();	// close connection
       var body = JSON.stringify("success");
       $.response.contentType = 'application/json';
       $.response.setBody(body);
       $.response.status = $.net.http.OK;
- gdfgfdgfdgdgfdgdfgfgdfgdf
+ 
 }
  
 // Function for validation of input. Returns true/false for valid/invalid inputs
