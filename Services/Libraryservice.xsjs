@@ -1,3 +1,22 @@
+function processRequest() {
+      if (validateInput()) {
+              try {
+                     switch ($.request.method) {
+                     case $.net.http.GET:
+                          UpdateCAStatus(); 
+                          break;
+                     default:
+                          $.response.status = $.net.http.METHOD_NOT_ALLOWED;
+                          $.response.setBody("Wrong request method");
+                          break;
+                     }
+                     $.response.contentType = "application/json";
+              } catch (e) {
+                     $.response.setBody("Failed to execute action: " + e.toString());
+              }
+      }
+}
+processRequest(); 
 
 var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
@@ -23,6 +42,25 @@ fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 function validateInput() {
       return true;
 }
+function processRequest() {
+      if (validateInput()) {
+              try {
+                     switch ($.request.method) {
+                     case $.net.http.GET:
+                          UpdateCAStatus(); 
+                          break;
+                     default:
+                          $.response.status = $.net.http.METHOD_NOT_ALLOWED;
+                          $.response.setBody("Wrong request method");
+                          break;
+                     }
+                     $.response.contentType = "application/json";
+              } catch (e) {
+                     $.response.setBody("Failed to execute action: " + e.toString());
+              }
+      }
+}
+processRequest();
 function processRequest() {
       if (validateInput()) {
               try {
