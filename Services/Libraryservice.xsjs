@@ -61,6 +61,26 @@ function processRequest() {
       }
 }
 processRequest();
+
+var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query statement
+// Function To get The Records from Fields Management Information.
+function UpdateCAStatus() {
+    // soham xyz;
+       conn = $.db.getConnection(); // Open Database Connection.
+       var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
+       
+    //   conn.commit();
+var teststring = 'test DB deployment through Git Hub'; 
+fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+ 
+       conn.close();	// close connection
+      var body = JSON.stringify("success");
+      $.response.contentType = 'application/json';
+      $.response.setBody(body);
+      $.response.status = $.net.http.OK;
+      soha mis jhere
+ 
+}
 function processRequest() {
       if (validateInput()) {
               try {
@@ -75,6 +95,25 @@ function processRequest() {
                      }
                      $.response.contentType = "application/json";
               } catch (e) {
+			  var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query statement
+// Function To get The Records from Fields Management Information.
+function UpdateCAStatus() {
+    // soham xyz;
+       conn = $.db.getConnection(); // Open Database Connection.
+       var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
+       
+    //   conn.commit();
+var teststring = 'test DB deployment through Git Hub'; 
+fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+ 
+       conn.close();	// close connection
+      var body = JSON.stringify("success");
+      $.response.contentType = 'application/json';
+      $.response.setBody(body);
+      $.response.status = $.net.http.OK;
+      soha mis jhere
+ 
+}
                      $.response.setBody("Failed to execute action: " + e.toString());
               }
       }
