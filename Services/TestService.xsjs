@@ -22,6 +22,11 @@ fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
       $.response.contentType = 'application/json';
       $.response.setBody(body);
       $.response.status = $.net.http.OK;
+	  ar conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
+// Function To get The Records from Fields Management Information.
+function UpdateCAStatus() {
+       conn = $.db.getConnection(); // Open Database Connection.
+       var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
       soha mis jhere
  
 }
@@ -52,6 +57,11 @@ function processRequest() {
                      case $.net.http.GET:
                           UpdateCAStatus(); 
                           break;
+						  ar conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
+// Function To get The Records from Fields Management Information.
+function UpdateCAStatus() {
+       conn = $.db.getConnection(); // Open Database Connection.
+       var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
                      default:
                           $.response.status = $.net.http.METHOD_NOT_ALLOWED;
                           $.response.setBody("Wrong request method");
@@ -68,6 +78,11 @@ processRequest();
 var conn, query, cstmt;sfsdgdfgfd // variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
 function UpdateCAStatus() {
+ar conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
+// Function To get The Records from Fields Management Information.
+function UpdateCAStatus() {
+       conn = $.db.getConnection(); // Open Database Connection.
+       var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
     // soham xyz;
        conn = $.db.getConnection(); // Open Database Connection.
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
