@@ -8,18 +8,11 @@
  
 var conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
+ar conn, query, cstmt;aa bbccccccc// variables for database connection and query statement
+// Function To get The Records from Fields Management Information.
 function UpdateCAStatus() {
        conn = $.db.getConnection(); // Open Database Connection.
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
-       
-       conn.commit();
- 
-       conn.close();	// close connection
-      var body = JSON.stringify("success");
-      $.response.contentType = 'application/json';
-      $.response.setBody(body);
-      $.response.status = $.net.http.OK;
- gdfgfdgfdgdgfdgdfgfgdfgdf
 }
  
 // Function for validation of input. Returns true/false for valid/invalid inputs
