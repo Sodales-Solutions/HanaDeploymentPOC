@@ -10,9 +10,9 @@ var conn, query, cstmt; // variables for database connection and query statement
 // Function To get The Records from Fields Management Information.
 function UpdateCAStatus() {
        conn = $.db.getConnection(); // Open Database Connection.
-       var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
+       var pstmt,rs,query,queqwewqeweqwery1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
        
-    //   conn.commit();
+    //   conn.commit();qweqweweqweqweqwewewe
 var teststring = 'test DB deployment through Git Hub for test Library Services'; 
 
        conn.close();	// close connection
