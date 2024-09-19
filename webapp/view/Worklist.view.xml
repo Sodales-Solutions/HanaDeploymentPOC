@@ -1,0 +1,136 @@
+<!--<mvc:View controllerName="com.comparisonpattern.Test_ComparisonPattern.controller.Worklist" xmlns="sap.m" xmlns:cards="sap.f.cards"-->
+<!--	xmlns:core="sap.ui.core" xmlns:f="sap.f" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic">-->
+<!--	<f:DynamicPage class="sapUiComparisonContainer">-->
+<!--		<f:title>-->
+<!--			<f:DynamicPageTitle id="dynamic-page" stateChange="onStateChange" backgroundDesign="Transparent">-->
+<!--				<f:heading>-->
+<!--					<Button icon="sap-icon://navigation-left-arrow"/>-->
+<!--					<Title text="Second Page"/>-->
+<!--				</f:heading>-->
+<!--				<f:snappedContent>-->
+<!--					<Carousel height="auto" class="sapUiSmallMarginBottom" id="carousel-snapped" pageChanged="onPageChanged" pageIndicatorPlacement="Top"-->
+<!--						pages="{ path: 'worklistView>/aCardsData' }">-->
+<!--						<customLayout>-->
+<!--							<CarouselLayout visiblePagesCount="{worklistView>/pagesCount}"/>-->
+<!--						</customLayout>-->
+<!--						<f:Card class="sapUiTinyMarginTop">-->
+<!--							<f:header>-->
+<!--								<cards:Header title="{worklistView>title}" subtitle="{worklistView>subtitle}"/>-->
+<!--							</f:header>-->
+<!--						</f:Card>-->
+<!--					</Carousel>-->
+<!--				</f:snappedContent>-->
+<!--			</f:DynamicPageTitle>-->
+<!--		</f:title>-->
+<!--		<f:header>-->
+<!--			<f:DynamicPageHeader backgroundDesign="Transparent">-->
+<!--				<Carousel height="auto" class="sapUiSmallMarginBottom" id="carousel-expanded" pageChanged="onPageChanged" pageIndicatorPlacement="Top"-->
+<!--					pages="{ path: 'worklistView>/aCardsData' }">-->
+<!--					<customLayout>-->
+<!--						<CarouselLayout visiblePagesCount="{worklistView>/pagesCount}"/>-->
+<!--					</customLayout>-->
+<!--					<f:Card class="sapUiTinyMarginTop">-->
+<!--						<f:header>-->
+<!--							<cards:Header title="{worklistView>title}" subtitle="{worklistView>subtitle}"/>-->
+<!--						</f:header>-->
+<!--						<f:content>-->
+<!--							<l:VerticalLayout width="100%">-->
+<!--								<l:BlockLayout>-->
+<!--									<l:BlockLayoutRow>-->
+<!--										<l:BlockLayoutCell>-->
+<!--											<HBox>-->
+<!--												<Label text="Supplier:"/>-->
+<!--											</HBox>-->
+<!--											<HBox class="sapUiSmallMarginBottom">-->
+<!--												<Text text="{worklistView>Supplier}"/>-->
+<!--											</HBox>-->
+<!--											<HBox>-->
+<!--												<Label text="Main Category:"/>-->
+<!--											</HBox>-->
+<!--											<HBox class="sapUiSmallMarginBottom">-->
+<!--												<Text text="{worklistView>MainCategory}"/>-->
+<!--											</HBox>-->
+<!--											<HBox>-->
+<!--												<Label text="Category:"/>-->
+<!--											</HBox>-->
+<!--											<HBox class="sapUiSmallMarginBottom">-->
+<!--												<Text text="{worklistView>Category}"/>-->
+<!--											</HBox>-->
+<!--										</l:BlockLayoutCell>-->
+<!--										<l:BlockLayoutCell>-->
+<!--											<HBox>-->
+<!--												<Label text="Width (cm)"/>-->
+<!--											</HBox>-->
+<!--											<HBox class="sapUiSmallMarginBottom">-->
+<!--												<Text text="{worklistView>width}"/>-->
+<!--											</HBox>-->
+<!--											<HBox>-->
+<!--												<Label text="Height (cm)"/>-->
+<!--											</HBox>-->
+<!--											<HBox class="sapUiSmallMarginBottom">-->
+<!--												<Text text="{worklistView>hieght}"/>-->
+<!--											</HBox>-->
+<!--											<HBox>-->
+<!--												<Label text="Weight (gm)"/>-->
+<!--											</HBox>-->
+<!--											<HBox class="sapUiSmallMarginBottom">-->
+<!--												<Text text="{worklistView>weigth}"/>-->
+<!--											</HBox>-->
+<!--										</l:BlockLayoutCell>-->
+<!--									</l:BlockLayoutRow>-->
+<!--								</l:BlockLayout>-->
+<!--							</l:VerticalLayout>-->
+<!--						</f:content>-->
+<!--					</f:Card>-->
+<!--				</Carousel>-->
+<!--			</f:DynamicPageHeader>-->
+<!--		</f:header>-->
+<!--		<f:content>-->
+<!--			<List id="listItems" backgroundDesign="Transparent" class="sapUiSmallMarginBottom" items="{ path: 'worklistView>/BidApplicantsNew' }">-->
+<!--				<items>-->
+<!--					<CustomListItem class="sapUiComparisonContent">-->
+<!--						<Panel expandable="true" headerText="{worklistView>title}" height="2.75rem" expand="onPanelExpanded"></Panel>-->
+<!--						<HBox class="sapUiTinyMarginTop" alignItems="Start" backgroundDesign="Solid"-->
+<!--							items="{ path: 'worklistView>value', templateShareable : true }">-->
+<!--							<items>-->
+<!--								<VBox class="sapUiTinyMarginTopBottom sapUiComparisonItem">-->
+<!--									<layoutData>-->
+<!--										<FlexItemData growFactor="1" baseSize="0"/>-->
+<!--									</layoutData>-->
+<!--									<HBox>-->
+<!--										<FormattedText htmlText="{worklistView>text}"/>-->
+<!--									</HBox>-->
+<!--									<HBox class="sapUiSmallMarginTop" visible="true">-->
+<!--										<Text text="{worklistView>discription}"/>-->
+<!--									</HBox>-->
+<!--								</VBox>-->
+<!--							</items>-->
+<!--						</HBox>-->
+<!--					</CustomListItem>-->
+<!--				</items>-->
+<!--			</List>-->
+<!--		</f:content>-->
+<!--	</f:DynamicPage>-->
+<!--</mvc:View>-->
+<mvc:View controllerName="com.comparisonpattern.Test_ComparisonPattern.controller.Worklist" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:unified="sap.ui.unified" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar" xmlns:gt="sap.ui.table" xmlns:f="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:semantic="sap.m.semantic">
+	<semantic:FullscreenPage id="page" title="{i18n>worklistTitle}">
+		<semantic:content>
+			<HBox class="sapUiSmallMargin">
+				<Label text="Date:" design="Bold" class="sapUiTinyMarginTop sapUiTinyMarginEnd"/>
+				<DatePicker id="datePickerID" valueFormat="yyyy-MM-dd" displayFormat="dd-MM-yyyy" value="{worklistView>/dDate}"
+					maxDate="{worklistView>/dMaxDate}" change="onDateChange"/>
+				<!--<DatePicker id="datePickerID1" value="{ path:'worklistView>/dDate', type: 'sap.ui.model.type.Date', formatOptions: { style: 'long' } }"-->
+				<!--	parseError="alert('Parse error')" validationError="alert('Validation error')"/>-->
+				<!--<DateTimePicker id="myDTP" width="15rem"-->
+				<!--	value="{ path:'worklistView>/dDate', type: 'sap.ui.model.type.DateTime', formatOptions: { style: 'short/short' } }"-->
+				<!--	parseError="alert('Parse error')" validationError="alert('Validation error')"/>-->
+			</HBox>
+		</semantic:content>
+		<semantic:customFooterContent>
+			<ToolbarSpacer/>
+			<Button text="{i18n>OpenDetails}" type="Emphasized" press="onPressOpenDetails"/>
+		</semantic:customFooterContent>
+	</semantic:FullscreenPage>
+</mvc:View>
