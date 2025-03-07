@@ -7,7 +7,7 @@ function UpdateCAStatus() {
        var pstmt,rs,query,query1,pstmt1,rs1,rs2,pstmt2,query3,CurrentDate,DueDate,StatusUpdate;
        
     //   conn.commit();
-var teststring = 'test DB deployment through Git Hub'; 
+var teststring = 'test DB deployment through Git Hub'; rewrerwerewr
 fdssrfrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrxxxxx
  
        conn.close();	// close connection
